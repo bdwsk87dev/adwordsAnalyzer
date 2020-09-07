@@ -1,0 +1,42 @@
+$primary-color: #ef6c00
+$primary-color-hover: #ff9933
+$primary-color-lighting: #ffffcc
+$disabled-color: #cccccc
+$secondary-color: #283593
+$white: #fff
+$grey: #666666
+
+//mixins
+@mixin backgrounds($url,$color)
+  background: url($url) no-repeat $color
+  background-size: cover
+  background-position: center
+@mixin paragraph-2
+  font-size: 16px
+  line-height: 22px
+@mixin paragraph-3
+  font-size: 14px
+  line-height: 20px
+@mixin list-type-none
+  list-style-type: none
+@mixin control-text
+  text-overflow: ellipsis
+  overflow: hidden
+@mixin reset-button
+  border: none
+  outline: none
+@mixin section-margin
+  margin: 0 auto
+  padding: 145px 0
+@mixin button($bgcolor,$color)
+  display: block
+  max-width: 293px
+  height: 40px
+  line-height: 40px
+  background-color: $bgcolor
+  text-align: center
+  font-size: 20px
+  color: $color
+  border-radius: 5px
+  font-weight: bold
+  cursor: pointer
